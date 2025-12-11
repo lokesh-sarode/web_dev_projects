@@ -35,6 +35,28 @@ A simple application designed to help users manage and keep track of their movie
 *   **Edit and Delete:** 
     *    Buttons are added to **Edit** movie list  and **Delete** movie from the list.
 
+## 📌 Project 3: Clicks Counter
+A simple interactive web app built with HTML, CSS, and JavaScript that tracks the number of times a user clicks a button. It features real-time updates, a reset function, and a clean, minimal interface. This project demonstrates basic DOM manipulation and event handling in JavaScript.
+
+### **Key Features**
+- Real-time click count display  
+- Reset button to clear the counter  
+- Clean and minimal UI design  
+- Demonstrates DOM manipulation and event handling  
+- Lightweight and beginner-friendly implementation  
+
+
+## 📌 Project 4: Students Grade Tracker
+A lightweight grade-tracking tool created using HTML, CSS, and JavaScript. Users can enter student names and scores, and the app calculates and displays the average score of all students. This project highlights form handling, data validation, dynamic table updates, and basic logic implementation in JavaScript.
+
+### **Key Features**
+- Add student names and corresponding scores  
+- Automatically calculates the average score  
+- Dynamic table/list updates  
+- Basic input validation  
+- Interactive, responsive user interface  
+- Uses JavaScript for data handling and real-time calculations  
+
 ---
 ## ⬇️ Installation and Setup
 
