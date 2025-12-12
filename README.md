@@ -4,9 +4,10 @@ This repository is a collection of **basic web development projects** built usin
 
 ---
 
-Link: [Click here to see live preview for the projects](https://lokesh-sarode.github.io/web_dev_projects/){:target="_blank"}
+## Link: 
+<a href="https://lokesh-sarode.github.io/web_dev_projects/" target="_blank">Click here to see live preview for these projects</a>
 
----
+
 ## 🌡️ Project 1: Temperature Converter
 
 ### Description
