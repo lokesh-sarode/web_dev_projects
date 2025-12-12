@@ -19,9 +19,8 @@ A simple, user-friendly web application for quickly converting temperatures betw
     * **Fahrenheit to Celsius:** $C = (F - 32) \times \frac{5}{9}$
 * **Responsive:** Built with Bootstrap for a simple, cross-device interface.
 * **Lightweight:** A small-footprint application that runs quickly in any modern browser.
-* 
 
----
+
 ## 🎥 Project 2: Favorite Movie Organizer
 ### Description
 A simple application designed to help users manage and keep track of their movie collection. It provides a foundational structure for storing, viewing, and organizing their favorite movie data.
@@ -37,7 +36,7 @@ A simple application designed to help users manage and keep track of their movie
 *   **Edit and Delete:** 
     *    Buttons are added to **Edit** movie list  and **Delete** movie from the list.
 
----
+
 ## 👆 Project 3: Clicks Counter
 A simple interactive web app built with HTML, CSS, and JavaScript that tracks the number of times a user clicks a button. It features real-time updates, a reset function, and a clean, minimal interface. This project demonstrates basic DOM manipulation and event handling in JavaScript.
 
@@ -47,7 +46,7 @@ A simple interactive web app built with HTML, CSS, and JavaScript that tracks th
 - Demonstrates DOM manipulation and event handling  
 - Lightweight and beginner-friendly implementation  
 
----
+
 ## 🎓 Project 4: Students Grade Tracker
 A lightweight grade-tracking tool created using HTML, CSS, and JavaScript. Users can enter student names and scores, and the app calculates and displays the average score of all students. This project highlights form handling, data validation, dynamic table updates, and basic logic implementation in JavaScript.
 
@@ -59,7 +58,7 @@ A lightweight grade-tracking tool created using HTML, CSS, and JavaScript. Users
 - Interactive, responsive user interface  
 - Uses JavaScript for data handling and real-time calculations  
 
----
+
 ## 📝 Project 5: Basic To-Do List
 
 A simple and lightweight to-do list application that helps users add, track, and manage daily tasks efficiently. It provides an easy-to-use interface for organizing daily activities.
