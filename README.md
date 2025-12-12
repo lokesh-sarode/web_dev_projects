@@ -3,7 +3,9 @@
 This repository is a collection of **basic web development projects** built using **HTML, CSS, and Bootstrap**.
 
 ---
+
 Link: [Click here to see live preview for the projects](https://lokesh-sarode.github.io/web_dev_projects/)
+
 ---
 ## 🌡️ Project 1: Temperature Converter
 
@@ -20,7 +22,6 @@ A simple, user-friendly web application for quickly converting temperatures betw
 * 
 
 ---
-
 ## 🎥 Project 2: Favorite Movie Organizer
 ### Description
 A simple application designed to help users manage and keep track of their movie collection. It provides a foundational structure for storing, viewing, and organizing their favorite movie data.
