@@ -41,7 +41,6 @@ A simple interactive web app built with HTML, CSS, and JavaScript that tracks th
 
 ### **Key Features**
 - Real-time click count display  
-- Reset button to clear the counter  
 - Clean and minimal UI design  
 - Demonstrates DOM manipulation and event handling  
 - Lightweight and beginner-friendly implementation  
