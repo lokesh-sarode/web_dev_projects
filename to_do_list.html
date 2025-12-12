@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>
+        To-do List
+    </title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB' crossorigin='anonymous'>
+    <link href='https://fonts.cdnfonts.com/css/open-sans' rel='stylesheet'>
+    <link href='https://fonts.cdnfonts.com/css/oswald-4' rel='stylesheet'>
+    <style>
+        .main-container {
+            margin: 20px auto;
+            padding: 20px;
+            width: 600px;
+        }
+
+        #toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+
+        #body {
+
+            transition: 1s;
+        }
+
+        .dark {
+            background: radial-gradient(circle at center, #582688 0%, #351950 30%, #000000 100%);
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            color: white;
+        }
+
+        ul {
+            width: 100%;
+
+        }
+
+        ul li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body id="body">
+
+    <div class="main-container">
+        <button class="btn border" id="toggle">Dark</button>
+        <div class="text-center">
+            <h1>To-do List</h1>
+
+            <div class="py-3">
+                <input type="text" name="task" id="task" placeholder="New Task" class="form-control">
+                <button id="button" class="btn btn-success m-2">Add Task</button>
+            </div>
+        </div>
+        <div class="content p-3">
+            <ul id="list" type="1">
+
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const input = document.getElementById("task");
+        const addButton = document.getElementById("button");
+        const list = document.getElementById("list");
+        const contentBox = document.querySelector(".content")
+
+        addButton.addEventListener("click", function () {
+            if (!input.value) return;
+            const li = document.createElement("li");
+            li.textContent = input.value;
+
+            const delButton = document.createElement("button");
+            delButton.textContent = "❌";
+            delButton.classList.add("btn")
+            delButton.classList.add("border")
+            delButton.addEventListener("click", function () {
+                li.remove();
+            })
+            contentBox.classList.add("border");
+            contentBox.classList.add("rounded");
+            contentBox.classList.add("bg-white");
+            li.appendChild(delButton);
+            list.appendChild(li);
+            input.value = "";
+
+        })
+
+        input.addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                addButton.click();
+            }
+        })
+
+        const toggleBtn = document.getElementById("toggle");
+        const body = document.getElementById("body");
+        toggleBtn.addEventListener("click", function () {
+            if (!body.classList.contains("dark")) {
+                body.classList.add("dark");
+                toggleBtn.textContent = "Light";
+                toggleBtn.style.color = "white";
+                contentBox.style.color = "black";
+            }
+            else {
+                body.classList.remove("dark");
+                toggleBtn.textContent = "Dark";
+                toggleBtn.style.color = "black";
+            }
+        })
+    </script>
+</body>
+
+</html>
