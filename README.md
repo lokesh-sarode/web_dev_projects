@@ -59,6 +59,20 @@ A lightweight grade-tracking tool created using HTML, CSS, and JavaScript. Users
 - Uses JavaScript for data handling and real-time calculations  
 
 ---
+## 📝 Project 5: Basic To-Do List
+
+A simple and lightweight to-do list application that helps users add, track, and manage daily tasks efficiently. It provides an easy-to-use interface for organizing daily activities.
+
+### **Key Features**
+- Add new tasks quickly
+- View all tasks in a clear list
+- Mark tasks as completed
+- Delete tasks when no longer needed
+- Toggle between light and dark themes
+- Simple and user-friendly interface
+- Lightweight and fast performance
+
+---
 ## ⬇️ Installation and Setup
 
 Follow these steps to get a local copy of the repository up and running.
