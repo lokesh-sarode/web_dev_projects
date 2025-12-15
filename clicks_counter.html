@@ -25,7 +25,7 @@
         }
 
         #btn {
-            padding: 100px;
+            padding: 80px;
             margin-top: 50px;
             border-radius: 50px;
         }
@@ -35,15 +35,26 @@
             align-items: center;
 
         }
+
+        @media screen and (max-width:768px) {
+            body {
+                padding: 20px;
+            }
+
+            .main-container {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="main-container">
         <div class="text-center ">
-            <h3>Welcome to the Click Counter project</h3>
+            <h3>Welcome to the Click Counter</h3>
+            <p style="font-size: 20px;"><i>Have fun!!!</i></p>
             <div class="container d-flex" style="flex-direction: column;">
-              
+
                 <div style="height: 200px;">
                     <p>Count </p>
                     <span id="count"></span>
@@ -59,7 +70,7 @@
         const count = document.getElementById("count");
         const timer = document.getElementById("timer");
         let counter = 0;
-    
+
         count.textContent = counter;
         btn.addEventListener("click", function () {
             counter++;
@@ -69,7 +80,7 @@
                 btn.style.backgroundColor = "red";
                 btn.style.color = "white";
             }, 5000);
-           
+
         })
 
     </script>

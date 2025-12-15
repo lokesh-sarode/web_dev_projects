@@ -24,12 +24,13 @@
         }
 
         .light {
-            background-color: white;
+            background-color: #eeeeee;
             color: black;
         }
 
         .heading {
             font-family: "Oswald", Helvetica, sans-serif;
+            margin-top: 30px;
 
         }
 
@@ -124,24 +125,55 @@
         .black-to-white {
             filter: brightness(0) invert(1);
         }
+
+        @media screen and (max-width:768px) {
+            body {
+                padding: 20px;
+            }
+
+            .heading {
+                flex-direction: column;
+                /* justify-content: center !important; */
+                align-items: center !important;
+            }
+
+            .form {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .heading {
+                padding: 0;
+                font-size: 20px;
+            }
+
+            .alert {
+                width: fit-content;
+                position: absolute;
+                bottom: 0;
+                right: 5px;
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
 <body id="body" class="dark">
 
     <div class="fluid-container">
-        <div class="heading d-flex justify-content-center gap-3 p-5" id="heading">
+        <div class="heading d-flex justify-content-center gap-3" id="heading">
             <img src="static/grades.png" alt="" id="logo" width="50px" style="color: white;">
-            <h1 class="hover-underline-animation">
+            <h1 class="hover-underline-animation text-wrap">
                 Mini Project – Student Grade Tracker
             </h1>
+
         </div>
         <div class="button">
             <button type="button" class="btn btn-light" id="button">Day</button>
         </div>
-        <div class="row p-5">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="form p-5 " id="form">
+        <div class="row pt-5">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="form p-4" id="form">
                     <div class="text-center pb-4">
                         <h3 class="hover-underline-animation">Add Data</h3>
                     </div>
@@ -153,7 +185,7 @@
                     <button type="submit" id="btn" class="btn btn-outline-info w-100 mt-3">Add Student Data</button>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-6 col-md-12 col-sm-12">
                 <div class="form p-3 mb-5 text-center" id="data2">
                     <p id="result" class="pt-2"></p>
                 </div>
@@ -174,7 +206,6 @@
 
     <div class="alert alert-danger alert-dismissible fade show" role="alert" id="successAlert">
         <p id="message"></p>
-        <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> -->
     </div>
 
 
