@@ -9,41 +9,38 @@
     </title>
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css' rel='stylesheet'
         integrity='sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js">
     <link href='https://fonts.cdnfonts.com/css/open-sans' rel='stylesheet'>
     <link href='https://fonts.cdnfonts.com/css/oswald-4' rel='stylesheet'>
     <style>
-        body {
-            /* background: #2A7B9B; */
+        /* body {
             background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(11, 2, 15) 50%, rgb(26, 4, 36) 100%);
             color: white;
-            /* background: -moz-radial-gradient(rgb(0, 0, 0), rgb(26, 4, 36), rgb(48, 7, 66))  */
-        }
+        } */
 
-        /* Core structure and transition for animation */
         .project-card {
             display: flex;
             padding: 30px;
-            border: 1px solid #E0E0E0;
+            border: 2px solid #E0E0E0;
             border-radius: 12px;
-            /* Crucial for smooth animations */
+
             transition: all 0.3s ease-in-out;
             text-decoration: none;
             color: #333333;
-            background-color: white;
+            background: linear-gradient(white, white, transparent);
             margin-top: 20px;
         }
 
-        /* Hover Animation: Lift and Shadow */
         .project-card:hover {
             transform: translateY(-5px) scale(1.01);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            border-color: #00A99D;
-            /* Use your accent color */
+            /* border-color: #00A99D; */
+            border-color: #f8a35d;
         }
 
-        /* Optional: Staggered load animation (Requires simple JavaScript or complex CSS/SASS) */
-        /* @keyframes fadeInSlide { ... } */
-        /* .project-card { animation: fadeInSlide 0.5s ease forwards; } */
+        .card-icon {
+            font-size: 1.5rem;
+        }
     </style>
 </head>
 
@@ -57,64 +54,92 @@
 
         <main class="project-grid container">
             <a href="temperature_converter.html" class="project-card" target="_blank">
-                <div class="card-icon">🧠</div>
+                <div class="card-icon">🌡️</div>
                 <div class="card-body">
                     <h2 class="card-title">Temperature Converter</h2>
                     <p class="card-text">
-                        A simple, user-friendly web application for quickly converting temperatures between Celsius (°C) and Fahrenheit (°F).
+                        A simple, user-friendly web application for quickly converting temperatures between Celsius (°C)
+                        and Fahrenheit (°F).
                     </p>
                 </div>
             </a>
             <a href="favorite_movies_organizer.html" class="project-card" target="_blank">
-                <div class="card-icon">🧠</div>
+                <div class="card-icon">🎬</div>
                 <div class="card-body">
                     <h2 class="card-title">Favorite Movies Organizer</h2>
                     <p class="card-text">
-                         A simple application designed to help users manage and keep track of their movie collection. It provides a foundational structure for storing, viewing, and organizing their favorite movie data.
+                        A simple application designed to help users manage and keep track of their movie collection. It
+                        provides a foundational structure for storing, viewing, and organizing their favorite movie
+                        data.
                     </p>
                 </div>
             </a>
-             <a href="clicks_counter.html" class="project-card" target="_blank">
-                <div class="card-icon">🧠</div>
+            <a href="clicks_counter.html" class="project-card" target="_blank">
+                <div class="card-icon">🖱️</div>
                 <div class="card-body">
                     <h2 class="card-title">Clicks Counter</h2>
                     <p class="card-text">
-                        A simple interactive web app built with HTML, CSS, and JavaScript that tracks the number of times a user clicks a button. It features real-time updates, a reset function, and a clean, minimal interface. This project demonstrates basic DOM manipulation and event handling in JavaScript.                 
+                        A simple interactive web app built with HTML, CSS, and JavaScript that tracks the number of
+                        times a user clicks a button. It features real-time updates, a reset function, and a clean,
+                        minimal interface. This project demonstrates basic DOM manipulation and event handling in
+                        JavaScript.
                     </p>
                 </div>
             </a>
             <a href="students_grade_tracker.html" class="project-card" target="_blank">
-                <div class="card-icon">🧠</div>
+                <div class="card-icon">📊</div>
                 <div class="card-body">
                     <h2 class="card-title">Students Grade Tracker</h2>
                     <p class="card-text">
-                       A simple HTML/JavaScript app that lets users enter student names and marks, then automatically calculates and displays the average score of all students.
+                        A simple HTML/JavaScript app that lets users enter student names and marks, then automatically
+                        calculates and displays the average score of all students.
                     </p>
                 </div>
             </a>
 
             <a href="to_do_list.html" class="project-card" target="_blank">
-                <div class="card-icon">🧠</div>
+                <div class="card-icon">📝</div>
                 <div class="card-body">
                     <h2 class="card-title">Todo List</h2>
                     <p class="card-text">
-                       A simple and lightweight to-do list application that helps users add, track, and manage daily tasks efficiently. It allows creating, viewing, and removing tasks with an easy-to-use interface, making task management quick and organized.
+                        A simple and lightweight to-do list application that helps users add, track, and manage daily
+                        tasks efficiently. It allows creating, viewing, and removing tasks with an easy-to-use
+                        interface, making task management quick and organized.
                     </p>
                 </div>
             </a>
+
+            <a href="clock.html" class="project-card" target="_blank">
+                <div class="card-icon">🕒</div>
+                <div class="card-body">
+                    <h2 class="card-title">Clock and Timer</h2>
+                    <p class="card-text">
+                        A simple web-based Clock and Timer application built using HTML, CSS, JavaScript, and Bootstrap.
+                        The project displays the current time in real-time and includes a countdown timer where users
+                        can enter time in seconds and start the timer using a button or the Enter key.
+                    </p>
+                </div>
+            </a>
+
         </main>
     </div>
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js'
         integrity='sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI'
         crossorigin='anonymous'></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    <script>
+        VANTA.FOG({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00
+        })
+    </script>
 </body>
 
 
 </html>
-
-
-
-
-
-
-

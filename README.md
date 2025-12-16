@@ -73,6 +73,24 @@ A simple and lightweight to-do list application that helps users add, track, and
 - Simple and user-friendly interface
 - Lightweight and fast performance
 
+
+
+## 🕒 Project 6: Clock and Timer Project
+
+A simple web-based Clock and Timer application built using HTML, CSS, JavaScript, and Bootstrap. The project displays the current time in real-time and includes a countdown timer where users can enter time in seconds and start the timer using a button or the Enter key.
+
+### **Key Features**
+- Real-time digital clock that updates every second
+- Countdown timer with user-defined duration (in seconds)
+- Start timer using a button or the Enter key
+- Displays remaining time dynamically during countdown
+- Shows a completion message when the timer ends
+- Prevents multiple timers from running simultaneously
+- Responsive layout with Bootstrap styling
+- Clean and minimal user interface
+
+
+
 ---
 ## ⬇️ Installation and Setup
 
